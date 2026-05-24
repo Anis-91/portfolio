@@ -1,0 +1,55 @@
+
+body {
+    /* Centre */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0e68c; 
+}
+
+.clavier {
+    /* Cadre */
+    width: 800px;
+    padding: 20px;
+    background-color: #a9a9a9; 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ligne-touches {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 6px; /* Espace */
+}
+
+button {
+    background-color: #444; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    /* Flexbox  */
+    flex-basis: 0; /* Base */
+    flex-grow: 1; /* Croissance */
+    min-width: 0;
+}
+
+
+.touche-large {
+    /* Grand */
+    flex-grow: 2.2; 
+}
+
+.touche-small {
+    /* Petit */
+    flex-grow: 1.5; 
+}
+
+.touche-espace {
+    /* Espace */
+    flex-grow: 7; 
+}
