@@ -1,0 +1,196 @@
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="port_style.css">
+    <title>Portfolio - Ziane Anis</title>
+<script>
+function basculerMenu() {
+    var menu = document.getElementById("menu-mobile");
+    if(menu.className.indexOf("affiche") == -1) {
+        menu.className += " affiche";
+    } else {
+        menu.className = menu.className.replace(" affiche", "");
+    }
+}
+</script>
+</head>
+<body>
+
+    <nav class="barre-navigation">
+        <div class="conteneur-principal">
+            <span class="logo-site">Ziane<b> Anis</b></span>
+            
+            <div class="liens-pc">
+                <a href="#accueil">Accueil</a> 
+                <a href="#projets">Projets</a>
+                <a href="#competences">Compétences</a>
+                <a href="#apropos">À propos</a> 
+                <a href="CV-ZIANE_Anis.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button onclick="basculerMenu()" class="bouton-burger">Menu ☰</button>
+        </div>
+        
+        <div id="menu-mobile" class="liens-mobile">
+            <a href="#accueil" onclick="basculerMenu()">Accueil</a>
+            <a href="#projets" onclick="basculerMenu()">Projets</a>
+            <a href="#competences" onclick="basculerMenu()">Compétences</a>
+            <a href="#apropos" onclick="basculerMenu()">À propos</a>
+            <a href="CV-ZIANE_Anis.pdf" target="_blank" rel="noopener noreferrer" onclick="basculerMenu()">Mon CV</a>
+            <a href="#contact" onclick="basculerMenu()">Contact</a>
+        </div>
+    </nav>
+
+<header id="accueil" class="entete-page">
+    <div class="conteneur-principal grand-padding">
+        <h1>Ziane Anis</h1>
+        <p>Étudiant en BUT Informatique - Université Gustave Eiffel</p>
+        <p class="sous-titre">Motivé, Rigoureux, Enthousiaste.</p>
+        <a href="#projets" class="bouton-principal">Voir mes projets</a>
+    </div>
+</header>
+
+<section class="section-blanche" id="projets">
+<div class="conteneur-principal moyen-padding">
+    <h2>Mes Réalisations</h2>
+    <p class="texte-gris">Voici les projets que j'ai pilotés ou développés.</p>
+
+    <div class="liste-projets">
+        <article class="carte-projet">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AAZHMA5K9otnoHn53xIoHIAExvzlWnjf1w&s" alt="Projet Automate Python" class="image-projet">
+            <div class="info-projet">
+                <h3>Projet Automate Python</h3>
+                <p class="role-projet">Rôle : Développeur / Analyste</p>
+                <p style="margin-bottom: 15px;">Application d'outils mathématiques et algorithmiques pour la modélisation et la manipulation d'automates en Python.</p>
+                <a href="sae_math.zip" download="Projet_automate_python_ZIANE_Anis.zip" style="display: inline-block; background-color: #2563eb; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem; font-weight: bold;">
+                    Télécharger le projet (.zip)
+                </a>
+            </div>
+        </article>
+
+        <article class="carte-projet">
+            <img src="https://www.grouperossignol.com/wp-content/uploads/2025/11/A19I5243-Florian_Monot.jpg" alt="SAE Base de données" class="image-projet">
+            <div class="info-projet">
+                <h3>Projet BDD Ski</h3>
+                <p class="role-projet">Rôle : Développeur SQL / Concepteur</p>
+                <p style="margin-bottom: 15px;">Modélisation, création et gestion d'une base de données relationnelle optimisée pour le système d'une station de ski.</p>
+                <a href="sae-bdd-zski.zip" download="Projet_BDD_Ski_ZIANE_Anis.zip" style="display: inline-block; background-color: #2563eb; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem; font-weight: bold;">
+                    Télécharger le projet (.zip)
+                </a>
+            </div>
+        </article>
+
+        <article class="carte-projet">
+            <a href="exercice20_ziane_anis.html" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+            <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=80" alt="Projet Clavier" class="image-projet">
+            <div class="info-projet">
+                <h3>Clavier Responsive</h3>
+                <p class="role-projet">Rôle : Développeur</p>
+                <p><b>Clique ici</b> pour tester mon clavier responsive réalisé avec Flexbox.</p>
+            </div></a>
+        </article>
+
+        <article class="carte-projet">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Projet UNESCO" class="image-projet">
+            <div class="info-projet">
+                <h3>Site de l'UNESCO</h3>
+                <p class="role-projet">Rôle : Chef de Projet</p>
+                <p>Création complète d'un site web pour l'UNESCO. Coordination de l'équipe, application de méthodes agiles et répartition des tâches.</p>
+            </div>
+        </article>
+    </div>
+</div>
+</section>
+
+<section class="section-grise" id="competences" style="background-color: #f9f9f9; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+    <div class="conteneur-principal moyen-padding">
+        <h2>Mes Compétences</h2>
+        <p class="texte-gris" style="margin-bottom: 30px;">Les technologies et outils que je maîtrise au quotidien dans mon cursus.</p>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 5px;">
+                    <span>Python (Algorithmique & Data)</span>
+                    <span>85%</span>
+                </div>
+                <div style="background-color: #ddd; border-radius: 4px; height: 10px; width: 100%;">
+                    <div style="background-color: #2563eb; height: 100%; width: 85%; border-radius: 4px;"></div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 5px;">
+                    <span>SQL & Bases de données</span>
+                    <span>80%</span>
+                </div>
+                <div style="background-color: #ddd; border-radius: 4px; height: 10px; width: 100%;">
+                    <div style="background-color: #2563eb; height: 100%; width: 80%; border-radius: 4px;"></div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 5px;">
+                    <span>Développement Web (HTML, CSS, Flexbox)</span>
+                    <span>75%</span>
+                </div>
+                <div style="background-color: #ddd; border-radius: 4px; height: 10px; width: 100%;">
+                    <div style="background-color: #2563eb; height: 100%; width: 75%; border-radius: 4px;"></div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <div style="display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 5px;">
+                    <span>Gestion de version (Git / GitHub)</span>
+                    <span>70%</span>
+                </div>
+                <div style="background-color: #ddd; border-radius: 4px; height: 10px; width: 100%;">
+                    <div style="background-color: #2563eb; height: 100%; width: 70%; border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="apropos" class="section-grise">
+    <div class="conteneur-principal moyen-padding">
+        <h2>Qui suis-je ?</h2>
+        <div class="bloc-flex">
+            <div class="colonne-texte">
+                <h3>Profil</h3>
+                <p>Je suis actuellement élève en <b>BUT Informatique</b> à l'Université Gustave Eiffel (Marne-la-Vallée).</p>
+                <p>Naturellement enthousiaste et motivé, je suis aussi très <b>rigoureux</b>, j'aime que le travail soit bien fait et je porte une grande attention aux détails.</p>
+                <br>
+                <h3>Formation</h3>
+                <p><b>Baccalauréat Général (Mention Bien)</b><br>
+                Lycée Robert Doisneau, Corbeil-Essonnes.</p>
+                <ul style="padding-left:20px; color:#555; margin-top:5px;">
+                    <li>Spécialités : Mathématiques, Physique-Chimie</li>
+                    <li>Option : Mathématiques Expertes</li>
+                </ul>
+                <br>
+                <p style="border: 1px solid #4CAF50; padding: 10px; display:inline-block; border-radius:4px;">
+                     <b>Titulaire du permis de conduire</b><br>
+                    La distance ne me fait pas peur.
+                </p>
+            </div>
+            
+            <div class="colonne-texte">
+                <h3>Mon style de gestion</h3>
+                <p>Souvent <b>Chef de Projet</b>, j'ai une bonne capacité à coordonner les équipes. Je sais être ferme quand il le faut pour tenir les délais.</p>
+                <p class="boite-citation">"Un chef agréable qui assume les échecs et protège son équipe du surmenage."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="pied-de-page moyen-padding">
+    <div class="conteneur-principal">
+        <h3>Contactez-moi</h3>
+        <p>Disponible pour des projets ambitieux.</p>
+        <p style="margin-bottom: 15px;">anisziane7@gmail.com</p>
+        <a href="https://www.linkedin.com/in/anis-ziane-44052839b/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: #0077b5; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold;">
+            Mon profil LinkedIn
+        </a>
+    </div>
+</footer>
+
+</body>
